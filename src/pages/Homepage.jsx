@@ -1,3 +1,9 @@
+import SectionOne from "../components/HomepageSections/SectionOne";
+
 export default function Homepage() {
-  return <div>bidonisanje</div>;
+  return (
+    <div>
+      <SectionOne />
+    </div>
+  );
 }
