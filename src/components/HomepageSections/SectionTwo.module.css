@@ -4,7 +4,7 @@
   margin: 0 auto;
   font-family: "Fredoka", sans-serif;
   font-weight: 300;
-  background-color: rgb(227, 102, 102);
+  background-color: rgb(197, 173, 173); /* Your original neutral background */
 }
 
 .grid {
@@ -16,11 +16,16 @@
 .item1,
 .item2,
 .item3 {
-  background-color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(
+    135deg,
+    #ff6b6b,
+    #ff3e3e
+  ); /* Softer red gradient */
   padding: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly lighter shadow */
+  color: #fff; /* White text for strong contrast */
   transition: transform 0.3s;
 }
 
@@ -40,13 +45,16 @@
 }
 
 h2 {
-  color: #333;
+  color: #fff; /* White text for headings */
   margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 p {
-  color: #555;
+  color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
   line-height: 1.8;
+  font-weight: 500;
 }
 
 ul {
@@ -57,10 +65,15 @@ ul {
 
 li {
   margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.9); /* Consistent white for list items */
+  font-weight: 500; /* Bolder for better readability */
 }
 
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 12% 8%;
   }
 }
