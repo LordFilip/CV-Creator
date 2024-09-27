@@ -4,7 +4,7 @@
   margin: 0 auto;
   font-family: "Fredoka", sans-serif;
   font-weight: 300;
-  background-color: rgb(197, 173, 173); /* Your original neutral background */
+  background-color: rgb(197, 173, 173);
 }
 
 .grid {
@@ -16,16 +16,12 @@
 .item1,
 .item2,
 .item3 {
-  background: linear-gradient(
-    135deg,
-    #ff6b6b,
-    #ff3e3e
-  ); /* Softer red gradient */
+  background: linear-gradient(135deg, #ff6b6b, #ff3e3e);
   padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly lighter shadow */
-  color: #fff; /* White text for strong contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
   transition: transform 0.3s;
 }
 
