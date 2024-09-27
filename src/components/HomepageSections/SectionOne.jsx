@@ -12,7 +12,7 @@ export default function SectionOne() {
         </h3>
       </div>
       <Link className={styles.sectionOneLink} to={"/create"}>
-        Let's start now
+        {`Let's start now`}
       </Link>
     </div>
   );
