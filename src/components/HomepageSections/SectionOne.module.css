@@ -14,21 +14,67 @@
   margin-bottom: 8vh;
 }
 .header h1 {
-  font-size: 48px;
+  font-size: 4rem;
   margin-bottom: 2vh;
 }
-
-.container button {
-  background-color: #386697; /* Example background color */
-  color: white; /* Text color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  padding: 10px 20px; /* Padding around the button */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 16px; /* Font size */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+.sectionOneLink {
+  background: linear-gradient(135deg, #386697, #386697);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
-.container button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+.sectionOneLink::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  width: 90%;
+  height: 2px;
+  background: white;
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.sectionOneLink:hover {
+  background: linear-gradient(135deg, #4a90e2, #0b63c2);
+}
+
+.sectionOneLink:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/*
+.sectionOneLink::after {
+  content: "→";
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: none;
+}
+  */
+/*
+.sectionOneLink:hover::after {
+  opacity: 1;
+  display: block;
+}
+  */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10% 5%;
+    height: 80vh;
+  }
+  .header h1 {
+    font-size: 3.4rem;
+    margin-bottom: 2vh;
+  }
 }
