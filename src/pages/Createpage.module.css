@@ -1,0 +1,93 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(206, 213, 233);
+  font-family: "Fredoka", sans-serif;
+}
+
+.navbar {
+  width: 100vw;
+  height: 8vh;
+  background-color: #386697;
+  color: aliceblue;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  position: absolute;
+  right: 30px;
+  color: aliceblue;
+  font-size: 1rem;
+  padding: 0 10px;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: aliceblue;
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: center;
+}
+
+.link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+.main {
+  width: 100%;
+  height: 92vh;
+  background-color: #f60c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  list-style-type: none;
+}
+.main ul li {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(31, 31, 8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+}
+.main ul li:hover {
+  cursor: pointer;
+}
+
+.progress {
+  width: 100%;
+}
+.content {
+  width: 50%;
+  height: 70%;
+  background-color: aqua;
+}
+.selected {
+  background-color: purple;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 10vh;
+  }
+}
