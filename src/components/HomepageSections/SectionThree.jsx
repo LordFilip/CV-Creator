@@ -66,7 +66,7 @@ export default function SectionThree() {
           </ul>
         </div>
 
-        <div className={styles.content}>
+        <div className={styles.content2}>
           <h2>{textPages.find((page) => page.id === selected)?.title}</h2>
           <p>{textPages.find((page) => page.id === selected)?.content}</p>
         </div>
