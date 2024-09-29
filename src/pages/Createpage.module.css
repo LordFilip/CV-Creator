@@ -47,13 +47,44 @@
   height: 92vh;
   background-color: rgb(206, 213, 233);
   display: flex;
-  justify-content: center;
+
   align-items: center;
   flex-direction: column;
+  margin-top: 10vh;
 }
 .content {
-  width: 50vw;
-  height: 50vh;
+  width: 70vw;
+  height: 70vh;
+  background-color: rgb(251, 251, 251);
+  padding: 2vh 4vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.buttons {
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.buttons button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 8vw;
+  transition: background-color 0.2s ease;
+}
+.buttons button:hover {
+  cursor: pointer;
+  background-color: magenta;
+  color: white;
+}
+.pageCounter {
+  margin: auto;
+  width: 10vw;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 768px) {

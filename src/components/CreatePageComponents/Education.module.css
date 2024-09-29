@@ -64,3 +64,9 @@
   outline: none;
   border-color: #386697;
 }
+.invisible {
+  opacity: 0;
+}
+.invisible:hover {
+  cursor: default !important;
+}

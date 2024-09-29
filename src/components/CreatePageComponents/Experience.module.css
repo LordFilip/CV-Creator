@@ -64,3 +64,7 @@
   outline: none;
   border-color: #386697;
 }
+
+.invisible {
+  opacity: 0;
+}

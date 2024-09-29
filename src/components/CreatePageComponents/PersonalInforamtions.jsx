@@ -8,16 +8,41 @@ export default function PersonalInforamtions() {
       </div>
       <div className={style.content}>
         <div className={`${style.left} ${style.inputs}`}>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Phone" />
+          <div className={style.inputWrapper}>
+            <input type="text" placeholder="First Name" />
+            <i className="fa-solid fa-user"></i>
+          </div>
+          <div className={style.inputWrapper}>
+            <input type="text" placeholder="Last Name" />
+            <i className="fa-solid fa-user"></i>
+          </div>
+          <div className={style.inputWrapper}>
+            <input type="email" placeholder="Email" />
+            <i className="fa-solid fa-envelope"></i>
+          </div>
+          <div className={style.inputWrapper}>
+            <input type="tel" placeholder="Phone" />
+            <i className="fa-solid fa-phone"></i>
+          </div>
         </div>
+
         <div className={`${style.right} ${style.inputs}`}>
-          <input type="text" placeholder="Address" />
-          <input type="text" placeholder="City" />
-          <input type="text" placeholder="Country" />
-          <input type="text" placeholder="Postal Code" />
+          <div className={style.inputWrapper}>
+            <input type="text" placeholder="Address" />
+            <i className="fa-solid fa-home"></i>
+          </div>
+          <div className={style.inputWrapper}>
+            <input type="text" placeholder="City" />
+            <i className="fa-solid fa-city"></i>
+          </div>
+          <div className={style.inputWrapper}>
+            <input type="text" placeholder="Country" />
+            <i className="fa-solid fa-flag"></i>
+          </div>
+          <div className={style.inputWrapper}>
+            <input type="text" placeholder="Postal Code" />
+            <i className="fa-solid fa-mailbox"></i>
+          </div>
         </div>
       </div>
     </div>
