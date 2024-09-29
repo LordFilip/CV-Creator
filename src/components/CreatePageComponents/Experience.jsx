@@ -4,7 +4,7 @@ export default function Education() {
   return (
     <div>
       <div className={style.title}>
-        <h1>Education</h1>
+        <h1>Experience</h1>
       </div>
       <div className={style.content}>
         <div className={`${style.left} ${style.inputs}`}>
