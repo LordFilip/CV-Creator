@@ -12,6 +12,10 @@ export function PageProvider({ children }) {
       lastName: "",
       email: "",
       phone: "",
+      adress: "",
+      city: "",
+      country: "",
+      postlCode: "",
     },
     education: {
       universityName: "",
