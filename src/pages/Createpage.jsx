@@ -6,9 +6,30 @@ import { PageContext } from "../CV-context";
 export default function Createpage() {
   const { formData } = useContext(PageContext);
 
+  const isFormValid = () => {
+    const { personalInformations, education, experience } = formData;
+
+    const isPersonalInfoValid = Object.values(personalInformations).every(
+      (value) => value.trim() !== ""
+    );
+    const isEducationValid = Object.values(education).every(
+      (value) => value.trim() !== ""
+    );
+    const isExperienceValid = Object.values(experience).every(
+      (value) => value.trim() !== ""
+    );
+
+    return isPersonalInfoValid && isEducationValid && isExperienceValid;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(JSON.stringify(formData, null, 2));
+
+    if (isFormValid()) {
+      alert(JSON.stringify(formData, null, 2));
+    } else {
+      alert("Please fill in all required fields before submitting.");
+    }
   };
 
   const pages = ["personalInformations", "education", "experience"];

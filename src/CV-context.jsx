@@ -15,7 +15,7 @@ export function PageProvider({ children }) {
       adress: "",
       city: "",
       country: "",
-      postlCode: "",
+      postalCode: "",
     },
     education: {
       universityName: "",
