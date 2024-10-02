@@ -20,6 +20,7 @@ export default function Experience() {
               onChange={(e) =>
                 handleInputChange("experience", "position", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-briefcase"></i>
           </div>
@@ -31,6 +32,7 @@ export default function Experience() {
               onChange={(e) =>
                 handleInputChange("experience", "company", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-building"></i>
           </div>
@@ -42,6 +44,7 @@ export default function Experience() {
               onChange={(e) =>
                 handleInputChange("experience", "city", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-city"></i>
           </div>
@@ -60,6 +63,7 @@ export default function Experience() {
               onChange={(e) =>
                 handleInputChange("experience", "from", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-calendar-alt"></i>
           </div>
@@ -71,6 +75,7 @@ export default function Experience() {
               onChange={(e) =>
                 handleInputChange("experience", "to", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-calendar-check"></i>
           </div>

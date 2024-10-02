@@ -24,6 +24,7 @@ export default function PersonalInforamtions() {
                   e.target.value
                 )
               }
+              required
             />
             <i className="fa-solid fa-user"></i>
           </div>
@@ -39,6 +40,7 @@ export default function PersonalInforamtions() {
                   e.target.value
                 )
               }
+              required
             />
             <i className="fa-solid fa-user"></i>
           </div>
@@ -54,6 +56,7 @@ export default function PersonalInforamtions() {
                   e.target.value
                 )
               }
+              required
             />
             <i className="fa-solid fa-envelope"></i>
           </div>
@@ -69,6 +72,7 @@ export default function PersonalInforamtions() {
                   e.target.value
                 )
               }
+              required
             />
             <i className="fa-solid fa-phone"></i>
           </div>
@@ -87,6 +91,7 @@ export default function PersonalInforamtions() {
                   e.target.value
                 )
               }
+              required
             />
             <i className="fa-solid fa-home"></i>
           </div>
@@ -102,6 +107,7 @@ export default function PersonalInforamtions() {
                   e.target.value
                 )
               }
+              required
             />
             <i className="fa-solid fa-city"></i>
           </div>
@@ -117,6 +123,7 @@ export default function PersonalInforamtions() {
                   e.target.value
                 )
               }
+              required
             />
             <i className="fa-solid fa-flag"></i>
           </div>
@@ -132,6 +139,7 @@ export default function PersonalInforamtions() {
                   e.target.value
                 )
               }
+              required
             />
             <i className="fa-solid fa-envelope"></i>
           </div>

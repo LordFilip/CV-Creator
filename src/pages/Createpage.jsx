@@ -1,8 +1,7 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import style from "./Createpage.module.css";
 import { PageContext } from "../CV-context";
-import { useContext } from "react";
 
 export default function Createpage() {
   const { formData } = useContext(PageContext);
@@ -41,13 +40,18 @@ export default function Createpage() {
         </Link>
       </div>
       <div className={style.main}>
-        <div className={style.content}>
+        <form onSubmit={handleSubmit} className={style.content}>
           <Outlet />
           <div className={style.buttons}>
-            <button onClick={handlePrevious} disabled={pageIndex === 0}>
+            <button
+              type="button"
+              onClick={handlePrevious}
+              disabled={pageIndex === 0}
+            >
               Previous
             </button>
             <button
+              type="button"
               onClick={handleNext}
               disabled={pageIndex === pages.length - 1}
             >
@@ -60,11 +64,11 @@ export default function Createpage() {
             </h3>
           </div>
           <div className={style.btnDiv}>
-            <button className={style.submitButton} onClick={handleSubmit}>
+            <button type="submit" className={style.submitButton}>
               Create
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

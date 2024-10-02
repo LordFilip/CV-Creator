@@ -19,6 +19,7 @@ export default function Education() {
               onChange={(e) =>
                 handleInputChange("education", "universityName", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-school"></i>
           </div>
@@ -30,6 +31,7 @@ export default function Education() {
               onChange={(e) =>
                 handleInputChange("education", "city", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-city"></i>
           </div>
@@ -41,6 +43,7 @@ export default function Education() {
               onChange={(e) =>
                 handleInputChange("education", "degree", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-graduation-cap"></i>
           </div>
@@ -52,6 +55,7 @@ export default function Education() {
               onChange={(e) =>
                 handleInputChange("education", "subject", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-book-open"></i>
           </div>
@@ -66,6 +70,7 @@ export default function Education() {
               onChange={(e) =>
                 handleInputChange("education", "from", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-calendar-alt"></i>
           </div>
@@ -77,6 +82,7 @@ export default function Education() {
               onChange={(e) =>
                 handleInputChange("education", "to", e.target.value)
               }
+              required
             />
             <i className="fa-solid fa-calendar-check"></i>
           </div>
