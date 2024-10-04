@@ -117,6 +117,27 @@
   outline: none;
   box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
 }
+.buttons button:disabled {
+  background-color: #cccccc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.buttons button:disabled:hover {
+  background-color: #cccccc;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
 @media (max-width: 768px) {
   .navbar {

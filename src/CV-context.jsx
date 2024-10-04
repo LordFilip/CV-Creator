@@ -4,6 +4,8 @@ export const PageContext = createContext();
 
 // eslint-disable-next-line react/prop-types
 export function PageProvider({ children }) {
+  const [isCV, setIsCV] = useState(false);
+
   const pages = ["personalInformations", "education", "experience"];
   const [pageIndex, setPageIndex] = useState(0);
   const [formData, setFormData] = useState({
@@ -66,6 +68,8 @@ export function PageProvider({ children }) {
         handleNext,
         handlePrevious,
         handleInputChange,
+        isCV,
+        setIsCV,
       }}
     >
       {children}
