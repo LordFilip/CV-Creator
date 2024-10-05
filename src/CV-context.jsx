@@ -17,7 +17,7 @@ export function PageProvider({ children }) {
       adress: "",
       city: "",
       country: "",
-      postalCode: "",
+      image: "",
     },
     education: {
       universityName: "",
@@ -49,6 +49,22 @@ export function PageProvider({ children }) {
   };
 
   const handleInputChange = (page, field, value) => {
+    if (field === "image") {
+      const file = value;
+      if (file) {
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          const imageUrl = reader.result;
+          updateFormData(page, field, imageUrl);
+        };
+        reader.readAsDataURL(file);
+      }
+    } else {
+      updateFormData(page, field, value);
+    }
+  };
+
+  const updateFormData = (page, field, value) => {
     setFormData((prevData) => ({
       ...prevData,
       [page]: {

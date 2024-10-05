@@ -1,6 +1,85 @@
 .container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: black;
-  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.CVButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: background-color 0.3s;
+}
+
+.CVButton:hover {
+  background-color: #0056b3;
+}
+
+.printButton {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: background-color 0.3s;
+}
+
+.printButton:hover {
+  background-color: #218838;
+}
+
+.a4Container {
+  width: 30vw;
+  height: calc(30vw * 1.4);
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  margin-top: 60px;
+  overflow: auto;
+  z-index: 1000;
+}
+
+.header {
+  width: 100%;
+  height: 25%;
+  background-color: red;
+  padding: 2vh;
+  display: flex;
+}
+.image {
+  height: 100%;
+  width: 25%;
+  background-color: green;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.headerText {
+  width: 75%;
+  height: 100%;
+  background-color: aqua;
 }

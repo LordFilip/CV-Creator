@@ -129,19 +129,22 @@ export default function PersonalInforamtions() {
           </div>
           <div className={style.inputWrapper}>
             <input
-              type="text"
-              placeholder="Postal Code"
-              value={formData.personalInformations.postalCode}
+              type="file"
+              id="imageUpload"
+              className={style.imageUploadInput}
+              accept="image/*"
               onChange={(e) =>
                 handleInputChange(
                   "personalInformations",
-                  "postalCode",
-                  e.target.value
+                  "image",
+                  e.target.files[0]
                 )
               }
               required
             />
-            <i className="fa-solid fa-envelope"></i>
+            <label htmlFor="imageUpload" className={style.customFileUpload}>
+              <i className="fa-solid fa-upload"></i> Choose Image
+            </label>
           </div>
         </div>
       </div>
