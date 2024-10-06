@@ -2,7 +2,7 @@ import style from "./PersonalInformations.module.css";
 import { PageContext } from "../../CV-context";
 import { useContext } from "react";
 
-export default function PersonalInforamtions() {
+export default function PersonalInformations() {
   const { formData, handleInputChange } = useContext(PageContext);
 
   return (
@@ -141,9 +141,13 @@ export default function PersonalInforamtions() {
                 )
               }
               required
+              style={{ display: "none" }}
             />
             <label htmlFor="imageUpload" className={style.customFileUpload}>
-              <i className="fa-solid fa-upload"></i> Choose Image
+              <i className="fa-solid fa-upload"></i>{" "}
+              {formData.personalInformations.image
+                ? "Image is successfully uploaded"
+                : "Choose Image"}
             </label>
           </div>
         </div>

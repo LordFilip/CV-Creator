@@ -20,15 +20,19 @@
   gap: 10px;
 }
 
-.CVButton {
-  background-color: #007bff;
-  color: white;
+.CVButton,
+.printButton {
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   z-index: 1001;
   transition: background-color 0.3s;
+}
+
+.CVButton {
+  background-color: #007bff;
+  color: white;
 }
 
 .CVButton:hover {
@@ -38,12 +42,6 @@
 .printButton {
   background-color: #28a745;
   color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1001;
-  transition: background-color 0.3s;
 }
 
 .printButton:hover {
@@ -55,31 +53,59 @@
   height: calc(30vw * 1.4);
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
+  padding: 20px;
   margin-top: 60px;
   overflow: auto;
   z-index: 1000;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
-  width: 100%;
-  height: 25%;
-  background-color: red;
-  padding: 2vh;
   display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
 }
+
 .image {
-  height: 100%;
-  width: 25%;
+  width: 30%;
+  height: 150px;
+  margin-right: 20px;
   background-color: green;
 }
+
 .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .headerText {
-  width: 75%;
-  height: 100%;
-  background-color: aqua;
+  flex: 1;
+  color: black;
+}
+.headerText p {
+  color: black;
+}
+
+.headerText h2 {
+  margin: 0;
+  color: black;
+}
+
+.section {
+  margin-top: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  color: black;
+}
+
+.section h3 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.section p {
+  margin: 5px 0;
+  color: black;
 }

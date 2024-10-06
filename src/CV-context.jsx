@@ -17,7 +17,7 @@ export function PageProvider({ children }) {
       adress: "",
       city: "",
       country: "",
-      image: "",
+      image: null,
     },
     education: {
       universityName: "",
